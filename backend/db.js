@@ -1,39 +1,36 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-mongoose
-  .connect("mongodb://localhost:27017/thecloset", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("Conexion establecida"))
-  .catch((err) => console.log("Error", err));
+// mongoose
+//   .connect("mongodb://localhost:27017/thecloset", {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   })
+//   .then(() => console.log("Conexion establecida"))
+//   .catch((err) => console.log("Error", err));
 
-const productoSchema = new mongoose.Schema({
-  name: String,
-  brand: String,
-  description: String,
-  price: Number,
-  onSale: Boolean,
-  sale: Number,
-  category: String,
-  gender: String,
-  subCategory: String,
-  image: [String],
-  size: [String],
-  // colores: [String],
-  // stock: {
-  //   S: { negro: Number, blanco: Number },
-  //   M: { negro: Number, blanco: Number },
-  //   L: { negro: Number, blanco: Number },
-  //   XL: { negro: Number, blanco: Number },
+// const productoSchema = new mongoose.Schema({
+//   name: String,
+//   brand: String,
+//   description: String,
+//   price: Number,
+//   onSale: Boolean,
+//   sale: Number,
+//   category: String,
+//   gender: String,
+//   subCategory: String,
+//   image: [String],
+//   size: [String],
+// colores: [String],
+// stock: {
+//   S: { negro: Number, blanco: Number },
+//   M: { negro: Number, blanco: Number },
+//   L: { negro: Number, blanco: Number },
+//   XL: { negro: Number, blanco: Number },
 
-  // },
-  options: [Object],
-  isActive: {type: Boolean, default: false},
-  newArrival: {type: Boolean, default: false},
-});
+// },
+//   ../models/productModel"
 
-const Producto = mongoose.model("Products", productoSchema);
+// const Producto = mongoose.model("Products", productoSchema);
 
 // const productos = [
 //   {
@@ -118,4 +115,4 @@ const Producto = mongoose.model("Products", productoSchema);
 //   .then(() => console.log("Documentos insertados correctamente"))
 //   .catch((err) => console.error("Error al insertar documentos:", err));
 
-module.exports = Producto
+// module.exports = Producto;
